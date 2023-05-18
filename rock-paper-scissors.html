@@ -9,34 +9,24 @@
 </head>
 <body>
   <h2>ROCK PAPER SCISSORS</h2>
-  <button class="move-button" onclick="
-    playGame('Rock');
-  ">
+  <button class="move-button js-rock-button">
     <img src="images/Rock.png" alt="" class="move-icon">
   </button>
-  <button class="move-button" onclick="
-    playGame('Paper');
-  ">
+  <button class="move-button js-paper-button">
     <img src="images/Paper.png" alt="" class="move-icon">
   </button>
-  <button class="move-button" onclick="
-    playGame('Scissors');
-  ">
+  <button class="move-button js-scissors-button">
     <img src="images/Scissors.png" alt="" class="move-icon">
   </button>
   <p class="js-result result"></p>
   <p class="js-moves moves"></p>
   <p class="js-score score"></p>
-  <button class="reset-button" onclick="
-    score.Wins = 0;
-    score.Losses = 0;
-    score.Tie = 0;
-    updateScore();
-  ">
+  <button class="reset-button js-reset-button">
     Reset Score
   </button>
-  <button class="auto-play-button js-auto-play-button" onclick="autoPlay();"
-  >Auto Play</button>
+  <button class="auto-play-button js-auto-play-button">
+    Auto Play
+  </button>
   
   
   
