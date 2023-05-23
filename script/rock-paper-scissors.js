@@ -10,12 +10,26 @@ document.querySelector('.js-scissors-button').addEventListener('click', () => {
   playGame('Scissors');
 });
 
-document.querySelector('.js-reset-button').addEventListener('click', () => {
-  resetScore();
+document.querySelector('.js-reset-button').addEventListener('click', resetScore);
+
+document.querySelector('.js-auto-play-button').addEventListener('click', autoPlay);
+
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'r') {
+    playGame('Rock');
+  }
 });
-document.querySelector('.js-auto-play-button').addEventListener('click', () => {
-  autoPlay();
-})
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'p') {
+    playGame('Paper');
+  }
+});
+
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 's') {
+    playGame('Scissors');
+  }
+});
 
 function updateScore () {
   document.querySelector('.js-score')
